@@ -1,0 +1,146 @@
+{
+    "name":"John Smith",
+    "thumbnail":"johnsmith.png",
+    "screenshot":"johnsmith.png",
+    "tags": {
+    "en": ["minimal", "clean", "photography", "modern", "flexible", "open", "simple", "independent", "art", "portfolio", "design", "creative", "ecommerce"],
+    "es": ["minimalista", "limpio", "fotografico", "moderno", "flexible", "abierto", "simple", "independiente", "arte", "portafolio", "diseño", "creativo", "ecommerce"],
+    "br": ["minimalista", "limpo", "fotografia", "moderno", "flexível", "aberto", "simples", "independente", "arte", "portfolio", "design", "criativo", "ecommerce"]
+    },
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#f6f7f2",
+            "color2":"#ffffff",
+            "color3":"#E87750",
+            "color4":"#212121",
+            "color5":"#747474",
+            "color6":"#747474",
+            "color7":"#f6f7f2"
+        },
+        "Swatch 2": {
+            "color1":"#f6f7f2",
+            "color2":"#ffffff",
+            "color3":"#FA8080",
+            "color4":"#212121",
+            "color5":"#747474",
+            "color6":"#747474",
+            "color7":"#f6f7f2"
+        },
+        "Swatch 3": {
+            "color1":"#f3f3f3",
+            "color2":"#ffffff",
+            "color3":"#67BACE",
+            "color4":"#212121",
+            "color5":"#747474",
+            "color6":"#747474",
+            "color7":"#f3f3f3"
+        },
+        "Swatch 4": {
+            "color1":"#f6f7f2",
+            "color2":"#ffffff",
+            "color3":"#5ACABD",
+            "color4":"#212121",
+            "color5":"#747474",
+            "color6":"#747474",
+            "color7":"#f6f7f2"
+        },
+        "Swatch 5": {
+            "color1":"#fdfdfd",
+            "color2":"#f3f3f3",
+            "color3":"#2e3192",
+            "color4":"#212121",
+            "color5":"#747474",
+            "color6":"#747474",
+            "color7":"#fdfdfd"
+        }
+    },
+    "fontSwatch": {
+       "title": "Pt Mono",
+        "font1": {
+            "font-family": "\"PT Mono\", \"Courier New\", Courier, monospace",
+            "font-size": "30px",
+            "font-weight": "400",
+            "line-height": "42px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"PT Mono\", \"Courier New\", Courier, monospace",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"PT Mono\", \"Courier New\", Courier, monospace",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "30px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Arial\", sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Arial\", sans-serif",
+            "font-size": "13px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"PT Mono\", \"Courier New\", Courier, monospace",
+            "font-size": "13px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "@color-swatch6",
+            "color-hover": "darken(@color-swatch6,20%)",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch1",
+            "background-color-hover": "@color-swatch1"
+        },
+        "font7": {
+            "font-family": "\"Arial\", sans-serif",
+            "font-size": "13px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "@color-swatch2",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,5%)"
+        },
+        "font8": {
+            "font-family": "\"Arial\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"Arial\", sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"PT Mono\", \"Courier New\", Courier, monospace",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "30px",
+            "color": "@color-swatch6",
+            "letter-spacing": "inherit"
+        }
+    }
+}
