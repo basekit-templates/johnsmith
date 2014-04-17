@@ -3,6 +3,8 @@
 
 {% block content %}
 
+<div class="bk-pt-home">
+
 <nav class="bk-nav">
     {{widget('extendednavigation', 'navigationheader', {})|raw}}
 </nav>
@@ -17,6 +19,7 @@
 </header>
 
 <div class="main wrapper clearfix">
+    {{widget('ecomproductslist', 'ecomlisthome', {})|raw}}
     {{zone('main')|raw}}
 </div> 
 
@@ -25,5 +28,7 @@
         {{widget('socialicons', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
     </div>
 </footer>
+
+</div>
 
 {% endblock %}
