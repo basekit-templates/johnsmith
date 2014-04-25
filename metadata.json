@@ -2,6 +2,7 @@
     "name":"John Smith",
     "thumbnail":"johnsmith.png",
     "screenshot":"johnsmith.png",
+    "pageTypes": ["default", "home", "about", "contact", "gallery"],
     "tags": {
     "en": ["minimal", "clean", "photography", "modern", "flexible", "open", "simple", "independent", "art", "portfolio", "design", "creative", "ecommerce"],
     "es": ["minimalista", "limpio", "fotografico", "moderno", "flexible", "abierto", "simple", "independiente", "arte", "portafolio", "diseño", "creativo", "ecommerce"],
@@ -93,7 +94,7 @@
             "font-family": "\"Arial\", sans-serif",
             "font-size": "13px",
             "font-weight": "400",
-            "line-height": "25px",
+            "line-height": "26px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
