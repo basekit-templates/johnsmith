@@ -2,7 +2,7 @@
     "name":"John Smith",
     "thumbnail":"johnsmith.png",
     "screenshot":"johnsmith.png",
-    "pageTypes": ["default", "home", "about", "contact", "gallery"],
+    "pageTypes": ["default", "home", "about", "contact", "gallery", "ecomproductlist"],
     "tags": {
     "en": ["minimal", "clean", "photography", "modern", "flexible", "open", "simple", "independent", "art", "portfolio", "design", "creative", "ecommerce"],
     "es": ["minimalista", "limpio", "fotografico", "moderno", "flexible", "abierto", "simple", "independiente", "arte", "portafolio", "diseño", "creativo", "ecommerce"],

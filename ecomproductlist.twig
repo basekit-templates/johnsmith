@@ -1,0 +1,32 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bk-pt-ecomproductlist">
+
+<nav class="bk-nav">
+    {{widget('extendednavigation', 'navigationheader', {})|raw}}
+</nav>
+
+<header class="bk-header">
+    <div class="wrapper clearfix">
+        <div class="companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </div>
+    </div><!--end wrapper clearfix-->
+</header>
+
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
+</div> 
+
+<footer class="bk-footer">
+    <div class="wrapper clearfix">
+        {{widget('socialicons', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+    </div>
+</footer>
+
+</div>
+
+{% endblock %}
