@@ -1422,7 +1422,7 @@ hr {
             width: auto;
         }
     }
-    .checkout-order-button {
+    .checkout-order-button, .checkout-empty-link {
         padding: 10px;
         margin-top: 20px;
         font-family: @font-swatch7-font-family;
@@ -1435,6 +1435,7 @@ hr {
         &:hover {
             background-color: @font-swatch7-background-color-hover;
             cursor: pointer;
+            text-decoration: none;
         }
         &:disabled {
             background-color: fade(@color-swatch3,50%);
