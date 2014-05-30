@@ -77,23 +77,23 @@
         },
         "font3": {
             "font-family": "\"PT Mono\", \"Courier New\", Courier, monospace",
-            "font-size": "18px",
+            "font-size": "20px",
             "font-weight": "400",
-            "line-height": "30px",
+            "line-height": "32px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font4": {
             "font-family": "\"Arial\", sans-serif",
-            "font-size": "12px",
+            "font-size": "14px",
             "font-weight": "400",
-            "line-height": "24px",
+            "line-height": "26px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font5": {
             "font-family": "\"Arial\", sans-serif",
-            "font-size": "13px",
+            "font-size": "14px",
             "font-weight": "400",
             "line-height": "26px",
             "color": "@color-swatch5",
@@ -101,9 +101,9 @@
         },
         "font6": {
             "font-family": "\"PT Mono\", \"Courier New\", Courier, monospace",
-            "font-size": "13px",
+            "font-size": "14px",
             "font-weight": "400",
-            "line-height": "25px",
+            "line-height": "26px",
             "color": "@color-swatch6",
             "color-hover": "darken(@color-swatch6,20%)",
             "letter-spacing": "inherit",
@@ -112,9 +112,9 @@
         },
         "font7": {
             "font-family": "\"Arial\", sans-serif",
-            "font-size": "13px",
+            "font-size": "14px",
             "font-weight": "400",
-            "line-height": "25px",
+            "line-height": "26px",
             "color": "@color-swatch2",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch3",
@@ -138,9 +138,9 @@
         },
         "font10": {
             "font-family": "\"PT Mono\", \"Courier New\", Courier, monospace",
-            "font-size": "18px",
+            "font-size": "24px",
             "font-weight": "400",
-            "line-height": "30px",
+            "line-height": "36px",
             "color": "@color-swatch6",
             "letter-spacing": "inherit"
         }
