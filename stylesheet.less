@@ -86,7 +86,6 @@ body {
         }
         ul {
             display: table;
-            float: none;
             margin: 0 auto;
             text-align: center;
             padding: 1em 0 0;
@@ -766,11 +765,23 @@ body {
   TWITTER
    =============================== */
 
-   .twitter-profile-pic {
-        float: left;
-        margin-right: 10px;
-    }
+.twitter-profile-pic {
+    float: left;
+    margin-right: 10px;
+}
 
+// Tweet
+.widget.tweet {
+    padding: 18px 0;
+}
+
+/* ===============================
+  TWITTER
+   =============================== */
+
+.widget.button {
+    margin: 8px 0;
+}
 
 /* ===============================
    SLIDESHOW WIDGET
@@ -908,7 +919,7 @@ body {
 }
 
 .widget {
-    &.bloglistposts {
+    &.blogpostlist {
         .blog-post-item {
             border-bottom: 1px dotted fade(@color-swatch5, 28%);
         }

@@ -2,6 +2,7 @@
     "name":"John Smith",
     "thumbnail":"johnsmith.png",
     "screenshot":"johnsmith.png",
+    "templateType":"ecommerce",
     "pageTypes": ["default", "home", "about", "contact", "gallery", "ecomproductlist"],
     "tags": {
     "en": ["minimal", "clean", "photography", "modern", "flexible", "open", "simple", "independent", "art", "portfolio", "design", "creative", "ecommerce"],
