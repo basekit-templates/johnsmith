@@ -526,6 +526,7 @@ body {
                         margin-bottom: 0;
                         &.menu-item-promoted { /* menu-item-promoted */
                                 background-color: darken(@color-swatch1,5%); 
+                                border: 1px solid darken(@color-swatch1,6%);
                                 padding: 1.5em;
                                 margin-top: 1em;
                                 display: inline-block;
@@ -664,6 +665,7 @@ body {
                     margin-bottom: 2em;
                     position: relative;
                     background-color: darken(@color-swatch1,5%);
+                    border: 1px solid darken(@color-swatch1,6%);
                     @media @mobile {
                         padding: 0 2em 0;
                         margin-bottom: 2em;
@@ -792,7 +794,7 @@ body {
    =============================== */
 
 .widget.responsiveslideshow {
-    background-color: @color-swatch2;
+    background: darken(@color-swatch1,3%);
     .slideshow-image-list,
     .slideshow-widget {
         min-height: 450px;
@@ -813,7 +815,7 @@ body {
         color: @color-swatch5;
     }
     .content-wrapper {
-        background: @color-swatch2;
+        background: darken(@color-swatch1,3%);
         text-align: center;
 
     }
@@ -870,7 +872,7 @@ body {
     }
     /* Slideshow Controls */
     .slideshow-widget-controls {
-        background-color: @color-swatch1;
+        background: @color-swatch1;
         padding-top: 10px;
         .dot {
             width: 9px;
@@ -1073,14 +1075,15 @@ hr {
     .productlist-display-form {
         text-align: left;
         width: 74%;
-        margin: 1% 0 3.5% 3%;
+        margin: 3% 0 3% 3%;
         display: inline-block;
         @media only screen and (max-width: 830px) {
             width: 100%;
             margin: 1% 0 0 3%;
         }
         @media only screen and (max-width: 600px) {
-            background-color: darken(@color-swatch1,3%);
+            background: darken(@color-swatch1,3%);
+            border: 1px solid darken(@color-swatch1,4%);
             margin-left: 3%;
             margin-bottom: 20px;
             width: 97%;
@@ -1102,6 +1105,8 @@ hr {
             }
             select {
                 display: inline-block;
+                border: 1px solid fade(@color-swatch5, 25%);
+                color: @color-swatch5;
                 @media only screen and (max-width: 600px) {
                     width:100%;
                 }
@@ -1124,8 +1129,10 @@ hr {
         }
     }
     .ecom-productslist-product {
-        background: @color-swatch2;
+        background: darken(@color-swatch1,3%);
+        border: 1px solid darken(@color-swatch1,4%);
         padding: 1.5em;
+        margin-bottom: 3%;
         @media @tablet {
             width: 30.36%;
             padding: 1em;
@@ -1138,7 +1145,7 @@ hr {
         }
         .ecom-productslist-image-wrap {
             height: 281px;
-            background-color: @color-swatch2;
+            background-color: darken(@color-swatch1,3%);
             @media only screen and (max-width: 1030px) {
                 height:241px;
             }
@@ -1164,8 +1171,13 @@ hr {
                 height: 250px;
             }
         }
+        &:hover {
+            .ecom-productlist-info .ecom-productslist-title {
+                color: @color-swatch3;
+            }
+        }
         .ecom-productlist-info {
-            text-align: left;
+            text-align: center;
             padding-top: 20px;
             .ecom-productslist-title {
                 font-family: @font-swatch5-font-family;
@@ -1173,6 +1185,8 @@ hr {
                 font-weight: @font-swatch5-font-weight;
                 line-height: @font-swatch5-line-height;
                 letter-spacing: @font-swatch5-letter-spacing;
+                color: @font-swatch5-color;
+                padding-bottom: 0;
                 a {
                     color: @font-swatch5-color;
                 }
@@ -1194,7 +1208,8 @@ hr {
         float: left;
         margin-bottom: 1em;
         padding: 2em;
-        background-color: @color-swatch2;
+        background: darken(@color-swatch1,3%);
+        border: 1px solid darken(@color-swatch1,4%);
         @media @tablet {
             width:100%;
         }
@@ -1348,7 +1363,7 @@ hr {
             .image-wrap {
                 width: 100px;
                 height: 100px;
-                border: 10px solid @color-swatch2;
+                border: 10px solid darken(@color-swatch1,3%);
                 margin-right: 20px;
                 background-position: center center;
                 background-repeat: no-repeat;
@@ -1374,7 +1389,8 @@ hr {
     }
 
     .delivery {
-        background-color: darken(@color-swatch1,3%);
+        background: darken(@color-swatch1,3%);
+        border: 1px solid darken(@color-swatch1,4%);
         padding: 2em;
         width: 50%;
         @media @tablet {
@@ -1507,7 +1523,7 @@ hr {
                 .ecombasket-item-image {
                     width: 100px;
                     height: 100px;
-                    border: 10px solid @color-swatch2;
+                    border: 10px solid darken(@color-swatch1,3%);
                     margin-right: 20px;
                     margin-top: 2px;
                 }
