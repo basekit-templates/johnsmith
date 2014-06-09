@@ -75,7 +75,6 @@ body {
         ul {
             display: table;
             margin: 0 auto;
-            text-align: center;
             padding: 1em 0 0;
             @media @tablet {
                 /* Hidden until nav icon is clicked */
@@ -173,14 +172,6 @@ body {
                         letter-spacing: @font-swatch6-letter-spacing;
                         position: relative;
                         &:after {
-                            content: "\25BC";
-                            font-size: 5px;
-                            position: absolute;
-                            top: 1px;
-                            display: block;
-                            z-index: 9999999;
-                            right: 0;
-                            color: @color-swatch6;
                             @media @tablet {
                                 font-size: 10px;
                                 padding-right: 10px;
@@ -245,8 +236,9 @@ body {
     }
 }
 
-.widget .extendednavigation ul li.folder:after {
-    display: none;
+.widget .extendednavigation ul.align-right li.folder:after {
+    left: 5px;
+    right: inherit;
 }
 
 
