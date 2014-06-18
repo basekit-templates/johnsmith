@@ -1,5 +1,7 @@
 @import "@{templateCommon}/basekit-bootstrap.less";
 
+
+
 body {
   background-color: @color-swatch1;
 }
@@ -750,7 +752,7 @@ body {
         -webkit-border-radius: none;
         -moz-border-radius: none;
         border-radius: none;
-        @media @mobile {
+        @media @mobile, (max-width: 700px) {
             width: 100%;
         }
     }
