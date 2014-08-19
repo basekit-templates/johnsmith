@@ -756,10 +756,69 @@ body {
 /* ===============================
   TWITTER
    =============================== */
+@twitterProfilePicSize: 62px;
 
-.twitter-profile-pic {
-    float: left;
-    margin-right: 10px;
+.widget.twitter {
+    ul.twitter {
+        li {
+            position: relative;
+            min-height: @twitterProfilePicSize;
+            // footer
+            a, time + span, time {
+                font-size: bkscale(@font-swatch5-font-size, 0.8);
+                font-family: @font-swatch5-font-family;
+                line-height: 1;
+                font-weight: normal;
+                color: fade(@color-swatch5,50%);
+                text-decoration: none;
+                @media @mobile {
+                    font-size: bkscale(@font-swatch5-font-size, 0.6);
+                }
+            }
+            // profile pic
+            .twitter-profile-pic {
+                width: @twitterProfilePicSize;
+                height: @twitterProfilePicSize;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                @media @mobile {
+                    width: (@twitterProfilePicSize * 0.55);
+                    height: (@twitterProfilePicSize * 0.55);
+                }
+                
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
+            .twitter-content {
+                line-height: 1.2em;
+                margin-left: (@twitterProfilePicSize + 20);
+                @media @mobile {
+                    margin-left: (@twitterProfilePicSize * 0.55 + 12);
+                }
+                .bk-full-name {
+                    color: @color-swatch3;
+                    font-size: bkscale(@font-swatch5-font-size, 1);
+                    @media @mobile {
+                        font-size: bkscale(@font-swatch5-font-size, 0.8);
+                    }
+                }
+                p {
+                    font-family: @font-swatch5-font-family;
+                    a {
+                        font-family: @font-swatch5-font-family;
+                        font-size: @font-swatch5-font-size;
+                        color: @color-swatch5;
+                        line-height: @font-swatch5-line-height;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // Tweet
@@ -767,9 +826,6 @@ body {
     padding: 18px 0;
 }
 
-/* ===============================
-  TWITTER
-   =============================== */
 
 .widget.button {
     margin: 8px 0;
