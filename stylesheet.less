@@ -1,6 +1,9 @@
 @import "@{templateCommon}/basekit-bootstrap.less";
 
+@import "@{templateLocal}/css/common-forms.less";
 
+// Larger than mobile
+@mobile-up: ~"only screen and (min-width : 480px)";
 
 body {
   background-color: @color-swatch1;
@@ -701,56 +704,20 @@ body {
 } /* end .widget */
 
 
-/* ===============================
-    PAYPAL BUTTON
-   =============================== */
 
-.widget.paypalbuynow .widget.button.paypal {
-    -webkit-border-radius: none;
-    -moz-border-radius: none;
-    border-radius: none;
-    border: none;
-}
 
 
 /* ===============================
   CONTACT FORM
    =============================== */
+.contactform fieldset {
+    border: none;
+    margin: 4px 0 13px;
+    padding: 0;
+}
 
-    .widget.contactform fieldset input, .widget.contactform fieldset textarea {
-        border: 1px solid darken(@color-swatch1,10%);
-        -webkit-border-radius: none;
-        -moz-border-radius: none;
-        border-radius: none;
-        margin-bottom: 5px;
-    }
 
-   .contactform fieldset {
-        border: none;
-        margin: 4px 0 13px;
-        padding: 0;
-    }
-
-/* ===============================
-  SIGN UP FORM
-   =============================== */
-
-   .widget.signupform fieldset input, .widget.profile form fieldset input {
-        border: 1px solid darken(@color-swatch1,10%);
-        background-color: #ffffff;
-        height: 45px;
-        margin-right: 5px;
-        margin-bottom: 5px;
-        -webkit-border-radius: none;
-        -moz-border-radius: none;
-        border-radius: none;
-        @media @mobile, (max-width: 700px) {
-            width: 100%;
-        }
-    }
-    .signupform fieldset button, .widget.profile form button {
-        padding: 10px;
-    }
+   
 
 
 /* ===============================
@@ -821,15 +788,7 @@ body {
     }
 }
 
-// Tweet
-.widget.tweet {
-    padding: 18px 0;
-}
 
-
-.widget.button {
-    margin: 8px 0;
-}
 
 /* ===============================
    SLIDESHOW WIDGET
@@ -943,6 +902,29 @@ body {
     }
 }
 
+// ======= Widget: Click To Call
+.widget.clicktocall {
+    a, a:hover {
+        padding: 0 1.6em;
+        padding-left: 50px;
+        background-position: 18px center;
+        @media @mobile-up {
+            padding: 0;
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+            color: @font-swatch5-color;
+            background: transparent;
+            text-shadow: none;
+            letter-spacing: 0;
+            font-size: @font-swatch5-font-size;
+            height: auto;
+            line-height: @font-swatch5-line-height;
+            cursor: default;
+        }
+    }
+}
+
 /* ===============================
    BLOCK QUOTE
   =============================== */
@@ -1031,39 +1013,6 @@ body {
     width: 100%;
 }
 
-/* BLOG SEARCH */
-.blogsearch {
-    form {
-        label {
-            display: block;
-        }
-        input {
-            border: 1px solid darken(@color-swatch1,10%);
-            width: 40%;
-            min-width: 160px;
-            margin-right: 5px;
-            margin-bottom: 5px;
-            height: 45px;
-            -webkit-border-radius: none;
-            -moz-border-radius: none;
-            border-radius: none;
-            @media @mobile {
-                width: 100%;
-            }
-            }
-
-        button {
-            padding: 10px;
-            font-family: @font-swatch7-font-family;
-            color: @font-swatch7-color;
-            font-size: @font-swatch7-font-size;
-            font-weight: @font-swatch7-font-weight;
-            line-height: @font-swatch7-line-height;
-            background-color: @font-swatch7-background-color;
-            border: none;
-        }
-    }
-}
 
 /* ===============================
   SOCIAL ICONS 
@@ -1181,25 +1130,9 @@ hr {
                 }
                 &.productlist-search {
                     input {
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        -webkit-border-radius: 0;
-                        height: 35px;
-                        border: 1px solid darken(@color-swatch1,3%);
                         @media @mobile {
                             width: 100%;
                             margin-bottom: 5px;
-                            height: 45px;
-                            border: 1px solid darken(@color-swatch1,8%);
-                        }
-                    }
-                    .btn {
-                        padding: 4px 14px;
-                        &:hover {
-                            background-color: @color-swatch5;
-                        }
-                        @media @mobile {
-                            padding: 8px 14px;
                         }
                     }
                 }
@@ -1526,107 +1459,6 @@ hr {
                 }
             }
         }
-    }
-
-    .delivery {
-        background: darken(@color-swatch1,3%);
-        border: 1px solid darken(@color-swatch1,4%);
-        padding: 2em;
-        width: 50%;
-        @media @tablet {
-            width: 100%;
-        }
-        .form-group {
-            span:not(.no-shipping) {
-                display:none;
-            }
-            &.invalid {
-                span:not(.no-shipping) {
-                    display:block;
-                }
-                input {
-                    margin-bottom: 0.5em;
-                    outline: 1px solid red;
-                }
-                span {
-                    color: red;
-                    margin-bottom: 0.5em;
-                }
-            }
-        }
-        .delivery-title {
-            font-size: @font-swatch3-font-size;
-            font-weight: @font-swatch3-font-weight;
-            color: @font-swatch5-color;
-            padding: 0 0 20px 0;
-            display: block;
-        }
-        label {
-            width:100%;
-            float: left;
-        }
-        input {
-            border: 1px solid fade(@color-swatch5,15%);
-            margin-bottom: 1em;
-        }
-        select {
-            margin-bottom: 1.5em;
-            -webkit-appearance: menulist;
-        }
-        .delivery-price {
-            font-size: @font-swatch3-font-size;
-            font-weight: @font-swatch3-font-weight;
-            color: @font-swatch5-color;
-            padding: 20px 5px 0;
-            margin-top: 1em;
-            border-top: 1px solid fade(@color-swatch5,15%);
-        }
-    }
-    .checkout-total-tax {
-        font-size: @font-swatch5-font-size;
-        font-weight: @font-swatch5-font-weight;
-        color: @font-swatch5-color;
-        margin-top: 1em;
-        padding: 20px 5px 0;
-    }
-    .checkout-total-amount {
-        font-size: @font-swatch3-font-size;
-        font-weight: @font-swatch3-font-weight;
-        color: @font-swatch3-color;
-        padding: 30px 5px;
-        margin-top: 5px;
-        border-bottom: 1px solid fade(@color-swatch5,15%);
-    }
-    .checkout-payment-method {
-        padding: 30px 5px;
-        border-bottom: 1px solid fade(@color-swatch5,15%);
-        input {
-            -webkit-appearance: radio;
-            width: auto;
-        }
-    }
-    .checkout-order-button, .checkout-empty-link {
-        padding: 10px;
-        margin-top: 20px;
-        font-family: @font-swatch7-font-family;
-        color: @font-swatch7-color;
-        font-size: @font-swatch7-font-size;
-        font-weight: @font-swatch7-font-weight;
-        line-height: @font-swatch7-line-height;
-        background-color: @font-swatch7-background-color;
-        border: none;
-        &:hover {
-            background-color: @font-swatch7-background-color-hover;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        &:disabled {
-            background-color: fade(@color-swatch3,50%);
-        }
-    }
-    .checkout-legal-links {
-        list-style: none;
-        padding: 20px 0 0;
     }
 }
 
