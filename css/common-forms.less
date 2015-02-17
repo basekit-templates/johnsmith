@@ -2,6 +2,7 @@
 // FORMS
 
 // Buttons
+.button,
 .widget.feature .feature-bgimg .content button,
 .contactform button.btn,
 .widget.button button,
@@ -42,7 +43,7 @@
 		padding: 0 1.2em;
 		font-size: bkscale(@font-swatch7-font-size, 0.75);
 		line-height: (@font-swatch7-font-size * 2);
-	} 
+	}
 
 	&:hover {
 		background-color: darken(@font-swatch7-background-color, 10%);
@@ -85,19 +86,19 @@
 	line-height: (@font-swatch7-font-size * 2.5 );
 
 
-	
+
 	@media only screen and (max-width : 460px) {
 		font-size: bkscale(@font-swatch7-font-size, 0.75);
 		height: (@font-swatch7-font-size * 2);
 		line-height: (@font-swatch7-font-size * 2);
-	} 
+	}
 
 
 
 
 	&:focus {
 		border: 1px solid @color-swatch3;
-		
+
 	}
 }
 
@@ -108,7 +109,7 @@
 	padding-bottom: 0.5em;
 	@media only screen and (max-width : 460px) {
 		line-height: bkscale(@font-swatch7-line-height, 0.5);
-	} 
+	}
 }
 
 // Labels
@@ -126,7 +127,7 @@
     @media only screen and (max-width : 460px) {
 		line-height: bkscale(@font-swatch4-line-height, 0.8);
 		font-size:bkscale(@font-swatch4-font-size, 0.8);
-	} 
+	}
 }
 
 
@@ -146,8 +147,8 @@
 		border: 2px solid @color-swatch3;
 		background-color: #F7F7F7;
 		color: @color-swatch5;
-		
-		
+
+
 		border-radius: 30px;
 		position: relative;
 		display: inline-block;
@@ -165,11 +166,11 @@
 		@media only screen and (max-width : 460px) {
 			font-size: bkscale(@font-swatch7-font-size, 0.75);
 			height: (@font-swatch7-font-size * 2);
-		} 
+		}
 
 		&:hover {
 			border-color: @color-swatch2;
-			
+
 		}
 
 		&:focus {
@@ -203,7 +204,7 @@ input::-moz-placeholder {  /* Firefox 19+ */
    color: mix(@color-swatch1, @color-swatch2, 16%);
 }
 
-input:-ms-input-placeholder {  
+input:-ms-input-placeholder {
    color: mix(@color-swatch1, @color-swatch2, 16%);
 }
 
