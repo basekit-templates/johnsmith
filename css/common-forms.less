@@ -18,7 +18,8 @@
 .widget.ecombasket .ecombasket-list-container .ecombasket-summart-wrap .ecombasket-summary-link,
 .blog-post-more-link a,
 .blog-list-footer .paginate-older,
-.widget.clicktocall a
+.widget.clicktocall a,
+.advancedcontactform button
  {
 	padding: 0 10px;
 	display: inline-block;
@@ -75,7 +76,9 @@
 .widget input[type="text"],
 .widget input[type="email"],
 .productlist-filter .productlist-search input,
-.signupform fieldset input {
+.signupform fieldset input,
+.advancedcontactform input,
+.advancedcontactform textarea {
 	background-color: #ffffff;
 	border: 1px solid darken(@color-swatch1,10%);
 	padding: 0 1em;
@@ -105,7 +108,8 @@
 	}
 }
 
-.contactform textarea {
+.contactform textarea,
+.advancedcontactform textarea {
 	line-height: bkscale(@font-swatch7-line-height, 0.7);
 	min-height: 10em;
 	padding-top: 0.5em;
@@ -120,7 +124,8 @@
 .signupform fieldset label,
 .blog-search-form label,
 .widget.ecomcheckout .delivery label,
-.ecom-product-vartitle {
+.ecom-product-vartitle,
+.advancedcontactform label {
     font-family: @font-swatch4-font-family;
     font-size: @font-swatch4-font-size;
     font-weight: @font-swatch4-font-weight;
@@ -133,12 +138,31 @@
 	}
 }
 
+// Advanced Contact Form
+
+.advancedcontactform {
+	.select-wrap {
+		margin: 10px 0 20px;
+    	display: inline-block;
+	}
+	.option-list {
+    	margin: 0px 0 10px;
+	}
+	label {
+    	width: 100%;
+    	display: block;
+	}
+	select {
+		border: 2px solid #e87750;
+    	background-color: #f7f7f7;
+    	height: 40px;
+	}
+}
 
 // Selects
 .widget.ecomproductslist .productlist-filter,
 .widget.ecomcheckout .delivery,
-.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation
-{
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation {
 	& select {
 		text-indent: 0.01px;
 		text-overflow: '';
