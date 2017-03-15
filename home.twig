@@ -6,11 +6,11 @@
 <div class="bk-pt-home">
 
 <nav class="bk-nav">
-    {{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
-
     {% if plugins.ecommerce.store.live %}
         {{widget('ecombasket', 'shopbasket', {})|raw}}
     {% endif %}
+
+    {{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
 </nav>
 
 <header class="bk-header">

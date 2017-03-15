@@ -1,0 +1,133 @@
+
+// ------------------------------
+// Ecommerce Basket Overlay
+// ------------------------------
+
+
+
+// If basket is open apply styles
+.basket-open .template-header,
+.form-open .template-header {
+    position: fixed;
+
+
+    &:before {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+[data-widget-type="ecombasket"] {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    z-index: 10001;
+}
+
+
+.widget.ecombasket .ecombasket {
+
+
+    // Basket button toggle
+    &-pull {
+        background-color: transparent;
+        font-size: 0;
+        letter-spacing: 0;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: auto;
+        z-index: 999;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+
+    // Basket button quantity
+    &-pull p {
+        background-color: @color__header--background;
+        border: 2px solid @color__link--text;
+        border-radius: 100px;
+        color: @color__link--text;
+        content: "";
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 1.2;
+        height: 30px;
+        margin-top: 5px;
+        position: absolute;
+        right: 0;
+        width: 30px;
+
+
+        &:before {
+            background-image: image('/images/basket.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            content: "";
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+        }
+
+
+        span {
+            display: none;
+        }
+    }
+}
+
+
+// Show Ecom Basket when basket is clicked
+.basket-open .widget.ecombasket .ecombasket-list-container {
+    display: inline-block;
+}
+
+
+
+// -----------------------------
+//  Ecommerce Basket Summary
+// -----------------------------
+
+
+.ecombasketsummary {
+
+
+    .summary-table {
+        margin: 30px 0;
+
+
+        .cell {
+            padding: 12px;
+        }
+
+
+        .summary-item-link {
+            background-repeat: no-repeat;
+            color: @color__h2--text;
+            display: block;
+        }
+    }
+
+
+    .summary-table .cell--price, .summary-table .cell--total {
+        @media @mobile-650px {
+            width: 100%!important;
+        }
+    }
+
+
+    .quantity-wrap {
+        background-color: #F5F5F5;
+        width: auto;
+    }
+
+
+    .quantity-field {
+        font-size: 15px;
+        line-height: 21px;
+    }
+}
