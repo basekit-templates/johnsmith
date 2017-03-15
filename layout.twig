@@ -31,17 +31,14 @@
 
 	{% block content %}
 	{% endblock %}
-	 
+
 	{% include basekit.bodyScript %}
 
-<script type="text/javascript">
-	! function () {
-	    function supportsSVG() {
-	        return !!document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect
-	    }
-	    if (supportsSVG()) document.documentElement.className += ' svg'
-	}()
-</script>
+	<!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/ecom-basket.js')}}"></script>
 
 </body>
 </html>

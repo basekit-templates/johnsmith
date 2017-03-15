@@ -1,6 +1,7 @@
 @import "@{templateCommon}/basekit-bootstrap.less";
 
 @import "@{templateLocal}/css/common-forms.less";
+@import "@{templateLocal}/css/ecom-basket.less";
 
 // Larger than mobile
 @mobile-up: ~"only screen and (min-width : 480px)";
@@ -66,6 +67,7 @@ div.widget .extendednavigation ul.align-right, div.widget .navigation ul.align-r
 }
 
 .bk-nav {
+    position: relative;
     width: 100%;
     margin: 0 auto;
     @media only screen and (min-width: 1140px) {
@@ -80,7 +82,7 @@ div.widget .extendednavigation ul.align-right, div.widget .navigation ul.align-r
 
 .widget {
     &.extendednavigation {
-        z-index: 99999;
+        z-index: 9999;
         @media @tablet {
             display: block;
         }
@@ -1855,39 +1857,46 @@ hr {
   ECOM - BASKET
    =============================== */
 
+ [data-widget-type="ecombasket"] + [data-widget-type="extendednavigation"] {
+    padding-right: 50px;
+}
+
+
 .widget.ecombasket {
     &.show-content .ecombasket-list-container {
         display: block;
     }
     .ecombasket-list-container {
-        padding: 1em 0;
+        background-color: @color-swatch1;
         display: none;
         margin-bottom: 1em;
+        padding: 35px 0 25px 0;
+        text-align: right;
         ul {
             display: inline-block;
             padding: 0;
+            max-width: 350px;
             width: 100%;
             li {
-                width: 100%;
                 list-style: none;
-                float: left;
+                float: right;
                 border-bottom: 1px dotted fade(@color-swatch5,30%);
-                padding: 2.5em 0;
+                padding: 20px 0;
+                width: 100%;
                 @media @tablet {
                     padding: 1.5em 0;
-                }
-                &:first-child {
-                    border-top: 1px dotted fade(@color-swatch5,30%);
                 }
                 .ecombasket-item-image {
                     width: 100px;
                     height: 100px;
                     border: 10px solid darken(@color-swatch1,3%);
-                    margin-right: 20px;
+                    margin-left: 12px;
+                    margin-right: 0;
                     margin-top: 2px;
+                    float: right;
                 }
                 .ecombasket-item-info {
-                    float: left;
+                    float: none;
                     .ecombasket-item-title, .ecombasket-item-count, .ecombasket-item-price, .ecombasket-remove-button {
                         display: inline-block;
                     }
@@ -1905,7 +1914,7 @@ hr {
                         padding: 0;
                         margin: 0;
                         display: block;
-                        text-align: left;
+                        text-align: right;
                         color: @color-swatch3;
                         &:hover {
                             color: @color-swatch5;
@@ -1915,8 +1924,6 @@ hr {
             }
         }
         .ecombasket-total-wrap {
-            padding: 1em 0 1.3em;
-            border-bottom: 1px dotted fade(@color-swatch5,30%);
             p {
                 padding: 0.3em 0;
             }
@@ -1943,7 +1950,6 @@ hr {
         }
     }
 }
-
 
 
 // ======= Widget: Gallery
