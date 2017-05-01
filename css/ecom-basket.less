@@ -21,8 +21,12 @@
 [data-widget-type="ecombasket"] {
     position: absolute;
     right: 20px;
-    top: 7px;
+    top: 15px;
     z-index: 10001;
+
+    @media @tablet {
+        top: 10px;
+    }
 }
 
 
@@ -43,32 +47,15 @@
         &:hover {
             background-color: transparent;
         }
-    }
-
-
-    // Basket button quantity
-    &-pull p {
-        background-color: transparent;
-        border: 2px solid @color-swatch3;
-        border-radius: 100px;
-        color: @color-swatch3;
-        content: "";
-        font-size: 10px;
-        font-weight: 500;
-        line-height: 1.2;
-        height: 30px;
-        margin-top: 0;
-        position: absolute;
-        right: 0;
-        width: 30px;
-
-
+        
         &:before {
             background-image: image('/images/basket.svg');
             background-repeat: no-repeat;
             background-position: center;
             content: "";
             display: inline-block;
+            position: absolute;
+            right: 0;
             height: 30px;
             width: 30px;
 
@@ -76,11 +63,12 @@
                 top: -2px;
             }
         }
+    }
 
 
-        span {
-            display: none;
-        }
+    // Basket button quantity
+    &-pull p {
+        display: none;
     }
 }
 
