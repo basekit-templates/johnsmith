@@ -1,5 +1,6 @@
 {
     "name":"John Smith",
+    "versionTenCompatible": 1,
     "thumbnail":"johnsmith.png",
     "screenshot":"johnsmith-screenshot.jpg",
     "templateType":"ecommerce",
