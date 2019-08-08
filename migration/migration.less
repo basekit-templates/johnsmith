@@ -12,6 +12,8 @@
     width: 100%;
     max-width: 100%;
     margin: 0;
+    padding-top: 0;
+    border: 0;
   }
 
   // Main content spacing (replace with corresponding template class)
@@ -29,7 +31,7 @@
   // -----------------------------
 
   // Replace with corresponding template values
-  @container-width: 960px;
+  @container-width: 1024px;
 
   @spacing__first--desktop: 40px;
   @spacing__first--tablet:  30px;
@@ -40,7 +42,7 @@
   // Applies spacing to widgets to mimic container width
   .empty-zone,
   #page-zones__main:empty,
-  #page-zones__main > .widget:not(.row),
+  #page-zones__main > .widget:not(.row):not(.button),
   .row:not(.widget):not(.row--width-no-padding) .row__container {
     margin-left: auto;
     margin-right: auto;
