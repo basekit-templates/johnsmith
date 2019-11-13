@@ -4,7 +4,7 @@
 
 #migrated-site {
 
-  // Stylseheet overrides
+  // Stylesheet overrides
   // -----------------------------
 
   // Template wrapper (replace with corresponding template classes)
@@ -12,12 +12,11 @@
     width: 100%;
     max-width: 100%;
     margin: 0;
-    padding-top: 0;
+    padding: 0;
   }
 
-  // Main content spacing (replace with corresponding template class)
-  .main {
-    padding: 0;
+  .bk-footer {
+    margin-top: 0;
   }
 
   // Widget overflow to allow 10S overlays to display correctly
@@ -41,29 +40,14 @@
   // Applies spacing to widgets to mimic container width
   .empty-zone,
   #page-zones__main:empty,
-  #page-zones__main > .widget:not(.row):not(.button),
-  .row:not(.widget):not(.row--width-no-padding) .row__container {
+  #page-zones__main > .widget:not(.row),
+  .row:not(.row--width-no-padding) .row__container {
     margin-left: auto;
     margin-right: auto;
     max-width: @container-width;
-    width: 100%;
-  }
-
-  .style--light, .style--accent, .style--background-image, .style--dark {
-    .row:not(.widget):not(.row--width-no-padding) .row__container {
-      width: 90%;
-    }
-  }
-
-  .main.wrapper {
     width: 90%;
-    max-width: @container-width;
-    margin: 0 auto;
   }
 
-  #page-zones__main > .widget.button {
-    margin: 0 auto;
-  }
 
   // Move spacing to first widget in the main zone (not sections)
   &.edit #page-zones__main-overlay + .widget:not(.row),
@@ -102,11 +86,10 @@
 
   // Adds spacing to the section when a widget is before it
   #page-zones__main > .widget:not(.row) + .row {
-    margin-bottom: @spacing--other;
     margin-top: @spacing--other;
 
-    &:not(:last-child) {
-         margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
